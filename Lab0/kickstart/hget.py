@@ -92,7 +92,8 @@ def connect_to_server(server_name):
     # Aqui deberian obtener la direccion ip del servidor y asignarla
     # a ip_address
     try:
-        ip_address = socket.gethostbyname(server_name) # obtiene la dirrecion ip
+        # obtener la dirrecion ip
+        ip_address = socket.gethostbyname(server_name)
         # DEJAR LA LINEA SIGUIENTE TAL COMO ESTA
         sys.stderr.write("Contactando al servidor en %s...\n" % ip_address)
         # Crear socket
