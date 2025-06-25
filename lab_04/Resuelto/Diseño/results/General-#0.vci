@@ -1,0 +1,110 @@
+file 125951 1748866220                                          
+version 3
+run General-0-20250602-09:10:17-4372
+attr configname General
+attr datetime 20250602-09:10:17
+attr datetimef 20250602-091017
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network
+attr processid 4372
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network Network
+config sim-time-limit 200s
+config Network.node[0].app.interArrivalTime exponential(7)
+config Network.node[0].app.packetByteSize 125000
+config Network.node[0].app.destination 5
+config Network.node[1].app.interArrivalTime exponential(7)
+config Network.node[1].app.packetByteSize 125000
+config Network.node[1].app.destination 5
+config Network.node[2].app.interArrivalTime exponential(7)
+config Network.node[2].app.packetByteSize 125000
+config Network.node[2].app.destination 5
+config Network.node[3].app.interArrivalTime exponential(7)
+config Network.node[3].app.packetByteSize 125000
+config Network.node[3].app.destination 5
+config Network.node[4].app.interArrivalTime exponential(7)
+config Network.node[4].app.packetByteSize 125000
+config Network.node[4].app.destination 5
+config Network.node[6].app.interArrivalTime exponential(7)
+config Network.node[6].app.packetByteSize 125000
+config Network.node[6].app.destination 5
+config Network.node[7].app.interArrivalTime exponential(7)
+config Network.node[7].app.packetByteSize 125000
+config Network.node[7].app.destination 5
+
+vector 0 Network.node[7].app SendedPackets ETV
+vector 1 Network.node[7].lnk[0] "Buffer Size" ETV
+vector 2 Network.node[6].app SendedPackets ETV
+vector 3 Network.node[6].lnk[1] "Buffer Size" ETV
+vector 4 Network.node[6].net ResendedPackets ETV
+vector 5 Network.node[6].lnk[0] "Buffer Size" ETV
+vector 6 Network.node[7].net ResendedPackets ETV
+vector 7 Network.node[7].lnk[1] "Buffer Size" ETV
+vector 8 Network.node[5].net Feedbacks ETV
+vector 9 Network.node[5].app Delay ETV
+vector 10 Network.node[5].app Hops ETV
+vector 11 Network.node[5].app ReceivedPackets ETV
+vector 12 Network.node[5].lnk[1] "Buffer Size" ETV
+vector 13 Network.node[0].net ResendedPackets ETV
+vector 14 Network.node[0].lnk[1] "Buffer Size" ETV
+vector 15 Network.node[0].app SendedPackets ETV
+vector 16 Network.node[1].net ResendedPackets ETV
+vector 17 Network.node[1].lnk[1] "Buffer Size" ETV
+vector 18 Network.node[4].app SendedPackets ETV
+vector 19 Network.node[4].lnk[1] "Buffer Size" ETV
+vector 20 Network.node[2].net ResendedPackets ETV
+vector 21 Network.node[2].lnk[1] "Buffer Size" ETV
+vector 22 Network.node[3].net ResendedPackets ETV
+vector 23 Network.node[3].lnk[1] "Buffer Size" ETV
+vector 24 Network.node[4].net ResendedPackets ETV
+vector 25 Network.node[1].app SendedPackets ETV
+vector 26 Network.node[0].lnk[0] "Buffer Size" ETV
+vector 27 Network.node[3].app SendedPackets ETV
+vector 28 Network.node[2].app SendedPackets ETV
+vector 29 Network.node[2].lnk[0] "Buffer Size" ETV
+vector 30 Network.node[1].lnk[0] "Buffer Size" ETV
+vector 31 Network.node[4].lnk[0] "Buffer Size" ETV
+vector 32 Network.node[3].lnk[0] "Buffer Size" ETV
+0	3113 708 1 8052 2.472113973963 198.531615460787 28 1 1 28 28
+1	3821 5274 3 7964 2.472113973963 196.610898711778 208 0 2 114 124
+2	9095 627 5 7844 3.395897146052 194.974508721797 25 1 1 25 25
+3	9722 8908 7 8100 3.395897146052 199.611198711778 352 0 2 178 180
+4	18630 2640 11 8013 3.472213973963 197.610998711778 104 1 1 104 104
+5	21270 6093 12 8056 3.472213973963 198.610998711778 240 0 2 124 128
+6	27363 2381 19 7813 4.395997146052 194.610898711778 94 1 1 94 94
+7	29744 8004 20 8081 4.395997146052 199.531615460787 316 0 3 188 222
+8	37748 4867 24 8092 4.472313973963 199.611098711778 192 1 1 192 192
+9	42615 6644 25 8093 4.472313973963 199.611098711778 192 1.0001 10.720865906592 854.57675716139 4804.8857641758
+10	49259 5059 25 8093 4.472313973963 199.611098711778 192 1 7 758 3786
+11	54318 5059 25 8093 4.472313973963 199.611098711778 192 1 1 192 192
+12	59377 10118 26 8095 4.472313973963 199.611098711778 384 0 1 192 192
+13	69495 2349 42 8085 5.396097146052 199.531715460787 89 1 1 89 89
+14	71844 7499 43 8089 5.396097146052 199.531715460787 285 0 4 229 391
+15	79343 621 45 7643 6.289922719388 192.124250322482 24 1 1 24 24
+16	79964 2182 54 8044 6.396197146052 198.236020495559 83 1 1 83 83
+17	82146 6679 55 7906 6.396197146052 195.611498711778 254 0 6 261 595
+18	88825 893 57 8006 6.839044984754 197.468645335931 34 1 1 34 34
+19	89718 3779 59 7982 6.839044984754 197.124650322482 144 0 2 74 76
+20	93497 1943 68 8078 7.396297146052 199.468845335931 74 1 1 74 74
+21	95440 5625 69 7938 7.396297146052 196.124450322482 214 0 5 221 487
+22	101065 1811 107 8049 8.396397146052 198.468745335931 69 1 1 69 69
+23	102876 4780 108 7952 8.396397146052 196.124550322482 182 0 3 141 219
+24	107656 1550 130 7980 9.396497146052 197.124650322482 59 1 1 59 59
+25	109206 628 240 7639 13.017229484523 192.025311133951 24 1 1 24 24
+26	109834 4538 246 8075 13.064540143037 199.236120495559 172 0 1 86 86
+27	114372 790 248 7957 13.152748379419 196.235820495559 30 1 1 30 30
+28	115162 847 261 7374 13.660817351191 188.014551687241 32 1 1 32 32
+29	116009 3070 449 8080 19.536847321493 199.468845335931 116 0 2 60 62
+30	119079 3753 476 8046 20.536947321493 198.236020495559 142 0 1 71 71
+31	122832 1108 480 8009 21.206532542754 197.468645335931 42 0 1 21 21
+32	123940 2010 509 8051 22.206632542754 198.468745335931 76 0 2 40 42
+
